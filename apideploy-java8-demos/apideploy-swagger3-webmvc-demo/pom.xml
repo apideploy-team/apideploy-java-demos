@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.kalman03</groupId>
+		<artifactId>apideploy-java8-demos</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>apideploy-swagger3-webmvc-demo</artifactId>
+	<name>apideploy-swagger3-webmvc-demo</name>
+	<description>Demo project for apideploy swagger3 webmvc</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.kalman03</groupId>
+			<artifactId>apideploy-swagger3-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+		</dependency>
+	</dependencies>
+</project>

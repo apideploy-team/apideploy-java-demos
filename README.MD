@@ -1,1 +1,1 @@
-A sample project of [apideploy-java8-client](https://github.com/apideploy-team/apideploy-java-client) and apideploy-jakarta-client
+A sample project of [apideploy-java8-client](https://github.com/apideploy-team/apideploy-java-client) and [apideploy-jakarta-client](https://github.com/apideploy-team/apideploy-jakarta-client)

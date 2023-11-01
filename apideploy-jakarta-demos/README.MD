@@ -1,0 +1,1 @@
+**apideploy-jakarta-demos** is a sample project based on [apideploy-jakarta-client](https://github.com/apideploy-team/apideploy-jakarta-client). Most of the documentation code comes from [springdoc-openapi-demos](https://github.com/springdoc/springdoc-openapi-demos) 

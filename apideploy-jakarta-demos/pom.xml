@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.kalman03</groupId>
+	<artifactId>apideploy-jakarta-demos</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>apideploy-jakarta-demos</name>
+	<description>apideploy-jakarta-demos</description>
+	<packaging>pom</packaging>
+
+	<properties>
+		<java.version>17</java.version>
+		<apideploy.version>1.0.0-SNAPSHOT</apideploy.version>
+		<springdoc.version>2.2.0</springdoc.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<modules>
+		<module>apideploy-jakarta-swagger3-webmvc-demo</module>
+		<module>apideploy-jakarta-swagger3-webflux-demo</module>
+		<module>apideploy-jakarta-javadoc-springweb-demo</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>3.0.12</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.kalman03</groupId>
+				<artifactId>apideploy-jakarta-swagger3-webmvc</artifactId>
+				<version>${apideploy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.kalman03</groupId>
+				<artifactId>apideploy-jakarta-swagger3-webflux</artifactId>
+				<version>${apideploy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.kalman03</groupId>
+				<artifactId>apideploy-jakarta-javadoc-springweb</artifactId>
+				<version>${apideploy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.28</version>
+				<optional>true</optional>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+				<version>${springdoc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
+				<version>${springdoc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-common</artifactId>
+				<version>1.7.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.1.5</version>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

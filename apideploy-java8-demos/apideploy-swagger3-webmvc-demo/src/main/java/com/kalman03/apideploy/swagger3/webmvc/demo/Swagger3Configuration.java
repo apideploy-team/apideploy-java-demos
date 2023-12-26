@@ -24,12 +24,14 @@ import static java.util.stream.Collectors.toSet;
 import java.util.stream.Stream;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import springfox.documentation.service.ApiKey;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+@Component
 @EnableSwagger2
 public class Swagger3Configuration {
 

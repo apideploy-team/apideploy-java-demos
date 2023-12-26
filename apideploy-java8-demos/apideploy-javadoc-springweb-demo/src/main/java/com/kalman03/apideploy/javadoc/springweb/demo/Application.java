@@ -13,13 +13,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.kalman03.apideploy.core.EnableApideploy;
 
 /**
  * @author kalman03
  * @since 2023-08-26
  */
-@EnableApideploy
 @SpringBootApplication(scanBasePackages = { "springfox.petstore","com.kalman03.apideploy.javadoc.springweb.demo" })
 public class Application {
 

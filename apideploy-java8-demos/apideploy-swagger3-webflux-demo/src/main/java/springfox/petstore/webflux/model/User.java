@@ -88,7 +88,7 @@ public class User implements Identifiable<String> {
     this.phone = phone;
   }
 
-  @ApiModelProperty(value = "User Status", allowableValues = "1-registered,2-active,3-closed")
+  @ApiModelProperty(value = "User Status")
   public int getUserStatus() {
     return userStatus;
   }

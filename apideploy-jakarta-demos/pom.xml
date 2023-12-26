@@ -13,7 +13,7 @@
 
 	<properties>
 		<java.version>17</java.version>
-		<apideploy.version>1.0.0-SNAPSHOT</apideploy.version>
+		<apideploy.version>1.0.2</apideploy.version>
 		<springdoc.version>2.2.0</springdoc.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
